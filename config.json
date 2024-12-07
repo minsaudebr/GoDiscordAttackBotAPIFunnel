@@ -1,0 +1,33 @@
+{
+  "botToken": "",
+  "webhookURL": "",
+  "allowedRoleId": "",
+  "keyRoleId": "",
+  "roleToAssign": "",
+  "keys": [
+    ""
+  ],
+  "UsedKeys": {},
+  "methods": {
+    "home": {
+      "description": "Send a request to home API endpoint. Usage: `/home \u003ctarget\u003e \u003cport\u003e \u003ctime\u003e`"
+    },
+    "keygen": {
+      "description": "Generate a new key. Usage: `.keygen`"
+    },
+    "redeem": {
+      "description": "Redeem a key. Usage: `.redeem \u003ckey\u003e`"
+    }
+  },
+  "api": {
+    "home": {
+      "url": "http://API_IP:API_PORT/api/start?username=user&key=key&host={TARGET}&port={PORT}&time={TIME}&method=method",
+      "requestFormat": {
+        "ip": "{TARGET}",
+        "method": "home",
+        "port": "{PORT}",
+        "time": "{TIME}"
+      }
+    }
+  }
+}
